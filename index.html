@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .h-80 {
+            height: 80%;
+        }
+
+        .h-10 {
+            height: 10%;
+        }
+
+        .max-h-150 {
+            max-height: 150px;
+        }
+
+        .overflow-auto {
+            overflow: auto;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .justify-end {
+            justify-content: end;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .gap-1 {
+            gap: 1rem
+        }
+
+        .gap-3 {
+            gap: 3rem
+        }
+
+        .pr-3 {
+            padding-right: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex justify-center h-10">
+        <h1>TO-DO</h1>
+    </header>
+    <div class="flex justify-center items-center h-80">
+        <div class="flex gap-3">
+            <section>
+                <h2>Form</h2>
+
+                <form id="form" action="#">
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="title" name="title" value="John">
+                    <br>
+                    <br>
+                    <label for="completed">Completed:</label><br>
+                    <input type="checkbox" id="completed" name="completed">
+                    <br>
+                    <br>
+                    <input id="form-btn" type="submit" value="Submit">
+                </form>
+            </section>
+            <section>
+                <h2>Data List</h2>
+
+                <div id="data-section">
+
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="flex h-10 justify-end pr-3">
+        Copyright ©2023 Yunus Taha YILMAZ
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
